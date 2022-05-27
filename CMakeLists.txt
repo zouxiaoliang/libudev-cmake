@@ -8,7 +8,6 @@ set(CMAKE_CXX_STANDARD_REQUIRED ON)
 option(TEST "build unit test" OFF)
 option(AS_CHILD_PROJECT "as child project" ON)
 
-set(toolchain_flags libc++abi.a dl rt libunwind.a)
 if (AS_CHILD_PROJECT)
     set(HAS_THIRDPARTY_LIBUDEV ON PARENT_SCOPE)
 endif()
